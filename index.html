@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            bài tập 2
+        </title>
+        <body>
+            <h1>Guest Reservation</h1>
+            <form>
+                <fieldset>
+                    <legend>Guest Reservation</legend>
+                    <label for="Arrival date">Arrival date:</label>
+                    <input type="datetime" required name="Arrival date" id="Arrival date"><br>
+                    <label for="Nights">Night:</label>
+                    <input type="text" required name="Nights" id="Nights"><br>
+                    <label for="Adults">Adults:</label>
+                    <select name="Adults" id="Adults" >
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select><br>
+                    <label for="Children">Children:</label>
+                    <select name="Children" id="Children" >
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="4">5</option>
+                        <option value="4">6</option>
+                        <option value="4">7</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label for="Room type">Room type:</label>
+                    <input type="radio" required name="Room type" value="standard" checked>standard
+                    <input type="radio" required name="Room type" value="Business" >Business
+                    <input type="radio" required name="Room type" value="Suite" >Suite
+
+                    <br><label for="Bed type">Bed type:</label>
+                    <input type="radio" required name="Bed type" value="King" checked>King
+                    <input type="radio" required name="Bed type" value="Double Double" >Double Double<br>
+                    <input type="checkbox" name="Bed type" value="Smoking">Smoking<br>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Infomation</legend>
+                    <label for="Name">Name:</label>
+                    <input type="text" required name="Name" id="Name"><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" required name="email" id="email"><br>
+                    <label for="Phone">Phone:</label>
+                    <input type="number" required name="phone" id="phone"><br>
+                </fieldset>
+                <button type="submit">Submit Reservation</button>
+            </form>
+        </body>
+    </head>
+</html>
